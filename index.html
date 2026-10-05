@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fady Amged — Front-End Web Developer. Modern, responsive, and engaging digital experiences."
+    />
+    <title>Fady Amged | Front-End Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="matrix-bg" aria-hidden="true"></canvas>
+    <div class="scanlines" aria-hidden="true"></div>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="logo" href="#home">
+          <span class="logo-prompt">~/</span>fady<span class="logo-dot">.</span>dev
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="terminal-line reveal">
+              <span class="prompt">guest@portfolio</span>
+              <span class="dim">:</span><span class="path">~</span>
+              <span class="dim">$</span> whoami
+            </p>
+            <h1 class="hero-name reveal">Fady Amged</h1>
+            <p class="hero-role">
+              <span id="typed-text">Front-End Web Developer</span
+              ><span class="caret" aria-hidden="true"></span>
+            </p>
+            <p class="hero-tagline reveal">
+              I turn ideas into modern, responsive, and engaging digital
+              experiences.
+            </p>
+            <p class="hero-intro reveal">
+              I’m a Front-End Web Developer focused on building modern,
+              responsive, and user-friendly digital experiences. I don’t just
+              write code; I turn ideas into practical and professional websites
+              that help businesses and projects achieve their goals.
+            </p>
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary" href="#projects">View My Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+            <div class="hero-social reveal">
+              <a
+                class="icon-link"
+                href="https://linkedin.com/in/fady-amged-4a26723b4"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.05c.53-1 1.84-2.1 3.78-2.1 4.04 0 4.79 2.66 4.79 6.12V24h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V24h-4V8.5z"
+                  />
+                </svg>
+              </a>
+              <!-- GitHub: set SOCIAL.github in script.js. Hidden until a URL is added. -->
+              <a
+                class="icon-link github-link"
+                href="#"
+               
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.79 8.2 11.37.6.11.82-.26.82-.58 0-.28-.01-1.02-.02-2-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo reveal">
+            <div class="photo-ring">
+              <div class="photo-frame">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="Portrait placeholder for Fady Amged"
+                  data-fallback="FA"
+                />
+                <div class="img-fallback" aria-hidden="true">FA</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-head reveal">
+          <p class="kicker">// about</p>
+          <h2>Building with intent</h2>
+        </div>
+        <div class="about-grid">
+          <article class="terminal-card reveal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <code>about.md</code>
+            </div>
+            <div class="terminal-body">
+              <p>
+                I’m a Front-End Web Developer focused on building modern,
+                responsive, and user-friendly digital experiences. I don’t just
+                write code; I turn ideas into practical and professional
+                websites that help businesses and projects achieve their goals.
+              </p>
+            </div>
+          </article>
+          <div class="about-visual reveal" aria-hidden="true">
+            <pre class="code-stack">
+<span class="c-kw">const</span> fady = {
+  role: <span class="c-str">"Front-End"</span>,
+  stack: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  focus: <span class="c-str">"usable UI"</span>
+};</pre>
+          </div>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <p class="edu-label">Education</p>
+            <h3>EELU</h3>
+            <p>Information Technology (IT)</p>
+          </article>
+          <article class="edu-card reveal">
+            <p class="edu-label">Training</p>
+            <h3>ITI</h3>
+            <p>Flutter Development Training</p>
+          </article>
+          <article class="edu-card reveal">
+            <p class="edu-label">Experience</p>
+            <h3>TIEC (Creativa)</h3>
+            <p>Freelance, 2026</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-head reveal">
+          <p class="kicker">// front-end</p>
+          <h2>Front-End Skills &amp; Tools</h2>
+        </div>
+        <h3 class="subhead reveal">Skills</h3>
+        <div class="card-grid">
+          <article class="icon-card reveal"><span class="glyph">&lt;/&gt;</span><h3>HTML5</h3></article>
+          <article class="icon-card reveal"><span class="glyph">{ }</span><h3>CSS3</h3></article>
+          <article class="icon-card reveal"><span class="glyph">JS</span><h3>JavaScript</h3></article>
+          <article class="icon-card reveal"><span class="glyph">[]</span><h3>Responsive Design</h3></article>
+          <article class="icon-card reveal"><span class="glyph">UI</span><h3>UI Implementation</h3></article>
+          <article class="icon-card reveal"><span class="glyph">~&gt;</span><h3>Interactive Web Experiences</h3></article>
+        </div>
+        <h3 class="subhead reveal">Tools</h3>
+        <div class="card-grid">
+          <article class="icon-card reveal"><span class="glyph">VS</span><h3>Visual Studio Code</h3></article>
+          <article class="icon-card reveal"><span class="glyph">G</span><h3>Git</h3></article>
+          <article class="icon-card reveal"><span class="glyph">GH</span><h3>GitHub</h3></article>
+          <article class="icon-card reveal"><span class="glyph">Fg</span><h3>Figma</h3></article>
+          <article class="icon-card reveal"><span class="glyph">AI</span><h3>AI Tools</h3></article>
+        </div>
+      </section>
+
+      <!-- Project cards are rendered from PROJECTS in script.js -->
+      <section id="projects" class="section projects">
+        <div class="section-head reveal">
+          <p class="kicker">// work</p>
+          <h2>Projects</h2>
+          <p class="section-note">Select a card to open the full case view.</p>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </section>
+
+      <section id="testimonials" class="section testimonials">
+        <div class="section-head reveal">
+          <p class="kicker">// signal</p>
+          <h2>What People Say</h2>
+        </div>
+        <div id="testimonials-grid" class="testimonials-grid"></div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="section-head reveal">
+          <p class="kicker">// stack+</p>
+          <h2>Additional Skills &amp; Services</h2>
+        </div>
+        <h3 class="subhead reveal">Technical skills</h3>
+        <div class="card-grid compact">
+          <article class="icon-card reveal"><span class="glyph">Fl</span><h3>Flutter</h3></article>
+          <article class="icon-card reveal"><span class="glyph">Dt</span><h3>Dart</h3></article>
+          <article class="icon-card reveal"><span class="glyph">Fb</span><h3>Firebase</h3></article>
+          <article class="icon-card reveal"><span class="glyph">Git</span><h3>Git / GitHub</h3></article>
+          <article class="icon-card reveal"><span class="glyph">SQL</span><h3>SQL</h3></article>
+          <article class="icon-card reveal"><span class="glyph">Jv</span><h3>Java</h3></article>
+          <article class="icon-card reveal"><span class="glyph">Py</span><h3>Python</h3></article>
+        </div>
+        <h3 class="subhead reveal">Services</h3>
+        <div class="card-grid compact">
+          <article class="icon-card reveal"><span class="glyph">01</span><h3>Web Development</h3></article>
+          <article class="icon-card reveal"><span class="glyph">02</span><h3>UI Design</h3></article>
+          <article class="icon-card reveal"><span class="glyph">03</span><h3>Responsive Design</h3></article>
+          <article class="icon-card reveal"><span class="glyph">04</span><h3>Landing Pages</h3></article>
+          <article class="icon-card reveal"><span class="glyph">05</span><h3>Flutter Development</h3></article>
+          <article class="icon-card reveal"><span class="glyph">06</span><h3>Website Optimization</h3></article>
+          <article class="icon-card reveal"><span class="glyph">07</span><h3>UI Implementation</h3></article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head reveal">
+          <p class="kicker">// connect</p>
+          <h2>Let's Work Together</h2>
+        </div>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form reveal" novalidate>
+            <label>
+              Full Name
+              <input type="text" name="name" autocomplete="name" required />
+              <span class="field-error" data-error-for="name"></span>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" autocomplete="email" required />
+              <span class="field-error" data-error-for="email"></span>
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" required />
+              <span class="field-error" data-error-for="subject"></span>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="6" required></textarea>
+              <span class="field-error" data-error-for="message"></span>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="form-feedback" class="form-feedback" role="status"></p>
+          </form>
+
+          <aside class="contact-aside reveal">
+            <a class="contact-chip" href="tel:01223755228">
+              <span>Phone</span>
+              <strong>01223755228</strong>
+            </a>
+            <a
+              class="contact-chip"
+              href="https://wa.me/201223755228"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>WhatsApp</span>
+              <strong>01223755228</strong>
+            </a>
+            <a class="contact-chip" href="mailto:fadyamged68@gmail.com">
+              <span>Email</span>
+              <strong>fadyamged68@gmail.com</strong>
+            </a>
+            <a
+              class="contact-chip"
+              href="https://linkedin.com/in/fady-amged-4a26723b4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>LinkedIn</span>
+              <strong>fady-amged</strong>
+            </a>
+            <a class="contact-chip github-link" href="#">
+              <span>GitHub</span>
+              <strong>fady-amged</strong>
+            </a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-name">Fady Amged</p>
+          <p>Front-End Web Developer</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/fady-amged-4a26723b4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="github-link" href="#">GitHub</a>
+          <a href="mailto:fadyamged68@gmail.com">Email</a>
+          <a href="https://wa.me/201223755228" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <p class="copyright">© <span id="year"></span> Fady Amged. All rights reserved.</p>
+    </footer>
+
+    <dialog id="project-modal" class="project-modal">
+      <div class="modal-shell">
+        <button class="modal-close" type="button" aria-label="Close project">&times;</button>
+        <div class="gallery">
+          <button class="gallery-nav prev" type="button" aria-label="Previous image">‹</button>
+          <div class="gallery-stage">
+            <img id="gallery-image" alt="" />
+            <div class="img-fallback gallery-fallback" aria-hidden="true">Preview</div>
+          </div>
+          <button class="gallery-nav next" type="button" aria-label="Next image">›</button>
+        </div>
+        <p class="gallery-count" id="gallery-count"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <h3>Features</h3>
+        <ul id="modal-features"></ul>
+        <h3>Technologies</h3>
+        <ul id="modal-tech" class="tech-list"></ul>
+        <a
+          id="modal-live"
+          class="btn btn-primary is-hidden"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View Live Website</a
+        >
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
